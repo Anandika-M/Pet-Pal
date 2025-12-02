@@ -78,7 +78,7 @@ The pet's mood changes based on its happiness level:
 - 💤 Sleeping
 - 🤒 Sick (when health < 50%)
 
-## Technical Details 🔧
+## Technical Details 
 - Built with vanilla JavaScript, HTML5, and CSS3
 - Uses CSS animations for smooth transitions
 - Local storage for saving game progress
@@ -86,12 +86,12 @@ The pet's mood changes based on its happiness level:
 - Object-oriented programming with ES6 classes
 - Promise-based asynchronous operations for animations
 
-## Requirements 📋
+## Requirements 
 - Modern web browser (Chrome, Firefox, Safari, Edge)
 - JavaScript enabled
 - Local storage support
 
-## Installation 🚀
+## Installation �
 1. Download all files
 2. Place all files in the same directory
 3. Ensure `assets` folder contains all required images
