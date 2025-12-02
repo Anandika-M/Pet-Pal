@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pet - Cozy Companion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Comic+Neue:wght@400;700&display=swap');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-paw"></i> Virtual Pet Companion</h1>
+            <p class="subtitle">Take care of your cute virtual pet in their cozy home!</p>
+        </header>
+
+        <div class="main-content">
+            <div class="game-area">
+                <!-- The Pet's Room -->
+                <div class="room" id="room">
+                    <!-- Background using your image -->
+                    <div class="room-bg"></div>
+                    
+                    <!-- Window -->
+                    <div class="window">
+                        <div class="window-frame">
+                            <div class="sky" id="sky">
+                                <div class="sun-moon" id="sunMoon"></div>
+                                <div class="clouds">
+                                    <div class="cloud cloud1"></div>
+                                    <div class="cloud cloud2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="window-sill"></div>
+                    </div>
+                    
+                    <!-- Interactive Items -->
+                    <div class="interactive-item food-bowl" id="foodBowl">
+                        <img src="assets/food_fill.png" alt="Food Bowl" class="item-img">
+                    </div>
+                    
+                    <div class="interactive-item toy-ball" id="toy">
+                        <img src="assets/toy.png" alt="Toy Ball" class="item-img">
+                    </div>
+                    
+                    <div class="interactive-item pet-bed" id="bed">
+                        <img src="assets/bed.png" alt="Pet Bed" class="item-img">
+                    </div>
+                    
+                    <!-- Pet Container -->
+                    <div class="pet-container" id="petContainer">
+                        <div class="pet" id="pet">
+                            <img src="assets/neutral.png" alt="Virtual Pet" id="petImage" class="pet-image">
+                            <div class="thought-bubble" id="thoughtBubble"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Stats Panel -->
+                <div class="stats-panel">
+                    <h2><i class="fas fa-chart-line"></i> Pet Status</h2>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card happiness">
+                            <div class="stat-header">
+                                <span class="stat-icon">😊</span>
+                                <span class="stat-name">Happiness</span>
+                                <span class="stat-value" id="happinessValue">100%</span>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="bar-fill" id="happinessBar"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card hunger">
+                            <div class="stat-header">
+                                <span class="stat-icon">🍕</span>
+                                <span class="stat-name">Hunger</span>
+                                <span class="stat-value" id="hungerValue">0%</span>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="bar-fill" id="hungerBar"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card energy">
+                            <div class="stat-header">
+                                <span class="stat-icon">⚡</span>
+                                <span class="stat-name">Energy</span>
+                                <span class="stat-value" id="energyValue">100%</span>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="bar-fill" id="energyBar"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card sleepiness">
+                            <div class="stat-header">
+                                <span class="stat-icon">💤</span>
+                                <span class="stat-name">Sleepiness</span>
+                                <span class="stat-value" id="sleepinessValue">0%</span>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="bar-fill" id="sleepinessBar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-display">
+                        <div class="time-display">
+                            <div class="time-icon"><i class="fas fa-clock"></i></div>
+                            <div class="time-text">Time:</div>
+                            <div class="time-value" id="timeOfDay">Day</div>
+                        </div>
+                        
+                        <div class="mood-display">
+                            <div class="mood-icon"><i class="fas fa-heart"></i></div>
+                            <div class="mood-text">Mood:</div>
+                            <div class="mood-value" id="currentMood">Happy</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Controls Panel -->
+            <div class="controls-panel">
+                <h2><i class="fas fa-gamepad"></i> Actions</h2>
+                <div class="controls-grid">
+                    <button class="control-btn feed" id="feedBtn" title="Feed your pet">
+                        <i class="fas fa-utensils"></i> Feed
+                    </button>
+                    <button class="control-btn play" id="playBtn" title="Play with your pet">
+                        <i class="fas fa-gamepad"></i> Play
+                    </button>
+                    <button class="control-btn sleep" id="sleepBtn" title="Put pet to sleep">
+                        <i class="fas fa-bed"></i> Sleep
+                    </button>
+                    <button class="control-btn pet" id="petBtn" title="Pet your pet">
+                        <i class="fas fa-hand"></i> Pet
+                    </button>
+                    <button class="control-btn clean" id="cleanBtn" title="Clean your pet">
+                        <i class="fas fa-bath"></i> Clean
+                    </button>
+                    <button class="control-btn treat" id="treatBtn" title="Give a treat">
+                        <i class="fas fa-cookie-bite"></i> Treat
+                    </button>
+                    <button class="control-btn medicine" id="medicineBtn" title="Give medicine">
+                        <i class="fas fa-pills"></i> Medicine
+                    </button>
+                    <button class="control-btn refill" id="refillBtn" title="Refill food bowl">
+                        <i class="fas fa-redo"></i> Refill
+                    </button>
+                    <button class="control-btn reset" id="resetBtn" title="Reset pet">
+                        <i class="fas fa-undo"></i> Reset
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Instructions -->
+            <div class="instructions">
+                <div class="instructions-header">
+                    <i class="fas fa-lightbulb"></i> How to Play
+                </div>
+                <div class="instructions-content">
+                    <p>• <strong>Feed</strong> when hunger is high</p>
+                    <p>• <strong>Play</strong> to increase happiness</p>
+                    <p>• <strong>Sleep</strong> when energy is low</p>
+                    <p>• <strong>Pet</strong> for instant happiness boost</p>
+                    <p>• <strong>Clean</strong> to keep pet healthy</p>
+                    <p>• <strong>Treat</strong> for special rewards</p>
+                    <p>• <strong>Medicine</strong> when pet gets sick</p>
+                    <p>• <strong>Refill</strong> food bowl when empty</p>
+                    <p>• <strong>Keyboard shortcuts:</strong> F=Feed, P=Play, S=Sleep, E=Pet, C=Clean, T=Treat, M=Medicine, R=Refill, Ctrl+R=Reset</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
