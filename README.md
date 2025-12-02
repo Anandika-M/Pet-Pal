@@ -1,9 +1,9 @@
-# Virtual Pet Companion 🐾
+# Virtual Pet Companion 
 
 ## Description
 Virtual Pet Companion is an interactive web-based virtual pet game where you can care for your own adorable virtual pet! Feed it, play with it, put it to sleep, and watch as it responds to your care. The pet has various needs (happiness, hunger, energy, sleepiness) that change over time, and it's your job to keep your pet happy and healthy.
 
-## Features ✨
+## Features 
 - **Interactive Pet**: Click on your pet or interactive items in the room to interact
 - **Multiple Actions**: Feed, play, sleep, pet, clean, treat, medicine, and refill food bowl
 - **Dynamic Stats**: Six different stats that change over time
@@ -17,7 +17,7 @@ Virtual Pet Companion is an interactive web-based virtual pet game where you can
 - **Responsive Design**: Works on desktop, tablet, and mobile devices
 - **Keyboard Shortcuts**: Quick actions using keyboard keys
 
-## How to Play 🎮
+## How to Play 
 1. **Feed** your pet when hunger is high
 2. **Play** to increase happiness and energy
 3. **Sleep** when energy is low
@@ -67,7 +67,7 @@ virtual-pet-game/
 - **Health**: Overall health (affected by hygiene and hunger)
 - **Hygiene**: Cleanliness (decreases over time)
 
-## Pet Moods 😊
+## Pet Moods �
 The pet's mood changes based on its happiness level:
 - 😄 Very Happy (85%+)
 - 😊 Happy (70%+)
@@ -98,12 +98,3 @@ The pet's mood changes based on its happiness level:
 4. Open `index.html` in your web browser
 5. Start playing!
 
-## Tips for Success 💡
-- Keep an eye on all stats - they affect each other
-- Don't let hunger get too high - it affects health
-- Sleep is the best way to recover energy
-- Regular cleaning prevents health issues
-- The food bowl needs refilling after each feeding
-- Clicking on the pet directly gives a happiness boost
-
-Enjoy taking care of your virtual pet! 🐾❤️
