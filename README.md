@@ -28,7 +28,7 @@ Virtual Pet Companion is an interactive web-based virtual pet game where you can
 8. **Refill** food bowl when empty
 9. **Click** on interactive items in the room or use action buttons
 
-## Keyboard Shortcuts ⌨️
+## Keyboard Shortcuts 
 - **F** = Feed
 - **P** = Play
 - **S** = Sleep
@@ -59,7 +59,7 @@ virtual-pet-game/
     └── walking2.png
 ```
 
-## Stats Explained 📊
+## Stats Explained �
 - **Happiness**: How happy your pet is (affected by all actions)
 - **Hunger**: How hungry your pet is (increases over time)
 - **Energy**: How energetic your pet is (decreases with activity)
@@ -67,7 +67,7 @@ virtual-pet-game/
 - **Health**: Overall health (affected by hygiene and hunger)
 - **Hygiene**: Cleanliness (decreases over time)
 
-## Pet Moods �
+## Pet Moods 
 The pet's mood changes based on its happiness level:
 - 😄 Very Happy (85%+)
 - 😊 Happy (70%+)
@@ -91,7 +91,7 @@ The pet's mood changes based on its happiness level:
 - JavaScript enabled
 - Local storage support
 
-## Installation �
+## Installation 
 1. Download all files
 2. Place all files in the same directory
 3. Ensure `assets` folder contains all required images
